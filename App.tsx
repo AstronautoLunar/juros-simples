@@ -4,10 +4,18 @@ import { SafeAreaView } from 'react-native';
 
 import { homeStyle } from './src/styles/globals';
 
+import { 
+  Header,
+  Input
+} from './src/components';
+
 export default function App() {
   return (
     <SafeAreaView style={homeStyle.container}>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
+      <Header
+        title="Calculadora de Juros Simples"
+      />
     </SafeAreaView>
   );
 }
