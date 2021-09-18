@@ -31,6 +31,24 @@ const homeStyle = StyleSheet.create({
     },
     textLight: {
       color: colors.ashRoseE70
+    },
+    buttonCalc: {
+      width: "auto",
+      height: "auto",
+      marginTop: 20,
+      padding: 10,
+      borderRadius: 10,
+      backgroundColor: colors.lightSuntamE13
+    },
+    textButton: {
+      fontSize: 20,
+      color: colors.ashRoseE70
+    },
+    scroll: {
+        width: 300,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 });
 

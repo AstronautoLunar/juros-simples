@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         width: "100%",
         height: 50,
-        paddingLeft: 20
+        paddingLeft: 20,
+        borderRadius: 10
     },
     inputDark: {
         color: colors.black,
