@@ -6,31 +6,29 @@ import {
 } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
-import { useDark } from '../../contexts/darkTheme';
-
 import styles from './styles';
 
 interface HeaderData {
     title: string;
+    value: boolean;
+    press: any;
 }
 
 export default function Header({ 
-    title
+    title,
+    value,
+    press
 }: HeaderData) {
-    let { 
-        dark, 
-        onChangeDark 
-    } = useDark();
 
     return (
         <View style={styles.header}>
             <Text style={styles.title}>{ title }</Text>
             <View style={styles.areaThemeDark}>
                 {
-                    dark
+                    value
                     ?
                     <TouchableOpacity
-                        onPress={onChangeDark}
+                        onPress={press}
                     >
                         <Feather
                             name="sun"
@@ -40,7 +38,7 @@ export default function Header({
                     </TouchableOpacity>
                     :
                     <TouchableOpacity
-                        onPress={onChangeDark}
+                        onPress={press}
                     >
                         <Feather
                             name="moon"

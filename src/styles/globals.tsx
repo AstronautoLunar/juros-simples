@@ -10,12 +10,28 @@ const colors = {
 
 
 const homeStyle = StyleSheet.create({
-    container: {
+    containerDark: {
+      flex: 1,
+      backgroundColor: colors.black,
+      justifyContent: 'flex-start',
+      alignItems: 'center'
+    },
+    containerLight: {
       flex: 1,
       backgroundColor: colors.ashRoseE70,
       justifyContent: 'flex-start',
-      alignItems: 'center',
+      alignItems: 'center'
     },
+    text: {
+      fontSize: 20,
+      marginTop: 40
+    },
+    textDark: {
+      color: colors.black
+    },
+    textLight: {
+      color: colors.ashRoseE70
+    }
 });
 
 export {
