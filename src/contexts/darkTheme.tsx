@@ -1,4 +1,4 @@
-import { 
+import React, { 
     createContext, 
     useContext,
     useState
@@ -8,7 +8,7 @@ const DarkTheme = createContext({} as DarkThemeData);
 
 interface DarkThemeData {
     dark: boolean;
-    onChangeDark: (value: any) => void;
+    onChangeDark: () => void;
 }
 
 interface DarkProviderData {
@@ -18,8 +18,8 @@ interface DarkProviderData {
 export function DarkProvider({ children }: DarkProviderData) {
     let [ dark, setDark ] = useState(false);
 
-    function onChangeDark(value:any) {
-        setDark(value);
+    function onChangeDark() {
+        setDark(!dark);
     }
 
     return (
