@@ -37,6 +37,7 @@ const homeStyle = StyleSheet.create({
       width: "auto",
       height: "auto",
       marginTop: 20,
+      marginBottom: 20,
       padding: 10,
       borderRadius: 10,
       backgroundColor: colors.lightSuntamE13

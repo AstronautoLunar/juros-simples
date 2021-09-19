@@ -23,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#4A4E69"
-      }
+      },
+      "package": "com.astronauto.jurossimples"
     },
     "web": {
       "favicon": "./assets/favicon.png"
