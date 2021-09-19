@@ -21,7 +21,7 @@ import {
 export default function App() {
   let [ style, setStyle ] = useState(false);
   
-  let [ total, setTotal ] = useState("Resultado");
+  let [ total, setTotal ] = useState(0);
   let [ inputs, setInputs ] = useState({
     capital: 0,
     taxa: 0,
@@ -44,7 +44,7 @@ export default function App() {
   }
   
   function calculate() {
-    setTotal(String(inputs.capital * inputs.taxa * inputs.tempo))
+    setTotal(inputs.capital * inputs.taxa * inputs.tempo)
   }
 
   function onChangeStorage() {
@@ -93,18 +93,6 @@ export default function App() {
             keyboardType="numeric"
             />
 
-          <TouchableOpacity
-            onPress={calculate}
-          >
-            <View
-              style={homeStyle.buttonCalc}
-            >
-              <Text style={homeStyle.textButton}>
-                Calcular
-              </Text>
-            </View>
-          </TouchableOpacity>
-
           <Animatable.Text
             transition="color"
             duration={200}
@@ -117,14 +105,24 @@ export default function App() {
               homeStyle.textLight
             ]}
           >
-            { 
-              total 
-              ?
-              `${total} reais`
-              :
-              "Resultado" 
+            {
+              `R$${total}`
             }
           </Animatable.Text>
+
+          <TouchableOpacity
+            onPress={calculate}
+          >
+            <View
+              style={homeStyle.buttonCalc}
+            >
+              <Text style={homeStyle.textButton}>
+                Calcular
+              </Text>
+            </View>
+          </TouchableOpacity>
+
+          
         </ScrollView>
       </Main>
     </>

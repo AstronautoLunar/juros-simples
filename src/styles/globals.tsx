@@ -23,9 +23,9 @@ const homeStyle = StyleSheet.create({
       alignItems: 'center'
     },
     text: {
-      fontSize: 20,
-      marginTop: 40,
-      marginBottom: 40
+      fontSize: 30,
+      marginTop: 20,
+      marginBottom: 20
     },
     textDark: {
       color: colors.black
@@ -42,7 +42,7 @@ const homeStyle = StyleSheet.create({
       backgroundColor: colors.lightSuntamE13
     },
     textButton: {
-      fontSize: 20,
+      fontSize: 30,
       color: colors.ashRoseE70
     },
     scroll: {
