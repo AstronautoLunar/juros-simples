@@ -24,7 +24,8 @@ const homeStyle = StyleSheet.create({
     },
     text: {
       fontSize: 20,
-      marginTop: 40
+      marginTop: 40,
+      marginBottom: 40
     },
     textDark: {
       color: colors.black
@@ -45,7 +46,7 @@ const homeStyle = StyleSheet.create({
       color: colors.ashRoseE70
     },
     scroll: {
-        width: 300,
+        width: 350,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'

@@ -5,16 +5,13 @@ import {
   SafeAreaView,
   TouchableOpacity,
   View,
-  Text
+  Text,
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
 const Main:any = Animatable.createAnimatableComponent(SafeAreaView);
 
-import { 
-  homeStyle, 
-  colors 
-} from './src/styles/globals';
+import { homeStyle } from './src/styles/globals';
 
 import { 
   Header,
@@ -23,6 +20,7 @@ import {
 
 export default function App() {
   let [ style, setStyle ] = useState(false);
+  
   let [ total, setTotal ] = useState("Resultado");
   let [ inputs, setInputs ] = useState({
     capital: 0,
@@ -40,7 +38,6 @@ export default function App() {
         break;
       case "tempo":
         setInputs({ ...inputs, tempo: value/12 });
-        console.log(value/12);
         break;
       default:
     }
@@ -48,6 +45,10 @@ export default function App() {
   
   function calculate() {
     setTotal(String(inputs.capital * inputs.taxa * inputs.tempo))
+  }
+
+  function onChangeStorage() {
+    setStyle(!style);
   }
 
   return (
@@ -67,14 +68,14 @@ export default function App() {
         <Header
           title="Calculadora de Juros Simples"
           value={ style }
-          press={ () => setStyle(!style) }
+          press={onChangeStorage}
         />
         <ScrollView
           contentContainerStyle={homeStyle.scroll}
         >
 
           <Input
-            label="Capital"
+            label="Capital R$"
             dark={style}
             onChangeText={text => onChangeValue("capital", Number(text))}
             keyboardType="numeric"
@@ -86,7 +87,7 @@ export default function App() {
             keyboardType="numeric"
             />
           <Input
-            label="Tempo"
+            label="Tempo (meses)"
             dark={style}
             onChangeText={text => onChangeValue("tempo", Number(text))}
             keyboardType="numeric"
@@ -116,7 +117,13 @@ export default function App() {
               homeStyle.textLight
             ]}
           >
-            { total }
+            { 
+              total 
+              ?
+              `${total} reais`
+              :
+              "Resultado" 
+            }
           </Animatable.Text>
         </ScrollView>
       </Main>

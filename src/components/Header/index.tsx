@@ -31,7 +31,7 @@ export default function Header({
                         onPress={press}
                     >
                         <Feather
-                            name="sun"
+                            name="moon"
                             size={35}
                             color="#F2E9E4"
                         />
@@ -41,7 +41,7 @@ export default function Header({
                         onPress={press}
                     >
                         <Feather
-                            name="moon"
+                            name="sun"
                             size={35}
                             color="#F2E9E4"
                         />
