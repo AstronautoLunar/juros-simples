@@ -15,11 +15,11 @@
 Fiz esse aplicativo com o intuito de desenvolver minhas habilidades em react native, O projeto consiste em fazer um calculo da capital(dinheiro), taxa(%), tempo(ano) 
 e retornar os juros
 
+Para mais informações https://www.todamateria.com.br/juros-simples/
+
 ## Aprendizado
 Nesse projeto aprendi a como lidar com entrada de dados, uso do hook useState, a desenvolver o tema dark onde as alterações no estado afeta a estilização da maiores dos
 componentes na interface, aprendi a usar uma lib para animações que permite fazer transição de propriedades em componente nativos
-
-Para mais informações https://www.todamateria.com.br/juros-simples/
 
 ## Pre Requisitos
 Você precisa apenas de um editor de código, ter o react native e expo instalados na sua maquina
