@@ -1,18 +1,23 @@
-<h1 align="center">Projeto Juros Simples</h1>
+<h1 align="center">Juros Simples</h1>
 
-<p align="center">Proeto Aplicativo mobile</p>
+<p align="center">Projeto Aplicativo mobile</p>
 
 * [Sobre](#Sobre)
-* [Pre Requisitos](#Pre-requisitos)
-* [Tecnologias](#tecnologias)
+* [Aprendizado](#Aprendizado)
+* [Pre Requisitos](#pre-requisitos)
+* [Tecnologias](#Tecnologias)
 
 <h4 align="center">
-  Concluido
+  ✅ Concluido
 </h4>
 
 ## Sobre
 Fiz esse aplicativo com o intuito de desenvolver minhas habilidades em react native, O projeto consiste em fazer um calculo da capital(dinheiro), taxa(%), tempo(ano) 
 e retornar os juros
+
+## Aprendizado
+Nesse projeto aprendi a como lidar com entrada de dados, uso do hook useState, a desenvolver o tema dark onde as alterações no estado afeta a estilização da maiores dos
+componentes na interface, aprendi a usar uma lib para animações que permite fazer transição de propriedades em componente nativos
 
 Para mais informações https://www.todamateria.com.br/juros-simples/
 
